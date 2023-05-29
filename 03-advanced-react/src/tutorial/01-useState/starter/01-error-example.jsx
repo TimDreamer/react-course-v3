@@ -1,5 +1,17 @@
-const ErrorExample = () => {
-  return <h2>useState error example</h2>;
-};
+let cnt = 0
 
-export default ErrorExample;
+const handleLCLick = () => {
+  cnt++
+  console.log(cnt)
+}
+
+const ErrorExample = () => {
+  return (
+    <div>
+      <h2>value: {cnt}</h2>
+      <button onClick={handleLCLick}>Click me</button>
+    </div>
+  )
+}
+
+export default ErrorExample
